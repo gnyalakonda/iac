@@ -1,30 +1,27 @@
-# IDP
+# IAC
 
-This proof of concept demonstrates different authentication types using IDP.
-
-## Authentication Types
-1. Username and Password Authentication
-2. Username and OTP Authentication
-3. Username and EMail OTP Authentication
+Infrastucture as code to install jenkins using reverse proxy with SSL support
 
 ## Prerequisites
-1. Install the docker desktop
-2. Make sure ports 80, and 8080 are available
+1. Install the docker
+2. Make sure ports 80, and 443 are available
 
 ## Installation
 
 Download the source code from git.
 
 ```bash
-git clone git@github.com:tarkiksolutions/idp.git
+git clone git@github.com:gnyalakonda/iac.git
 ```
 
 ## Usage
 
 ```bash
-cd idp
+cd iac
+git fetch origin jenkins-docker-compose-basic
+git checkout jenkins-docker-compose-basic 
 docker-compose up
 ```
 
-Open the browser and go to [http://localhost](http://localhost).
+Open the browser and go to [https://localhost/jenkins](https://localhost/jenkins).
 
